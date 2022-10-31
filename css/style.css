@@ -44,7 +44,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        outline: 1px solid red;
+        align-content: center;
+       
        
 }
 
@@ -62,29 +63,40 @@ body {
 .page-header {
         background: var(--second-color);
         padding-top: 24px;
+        padding-bottom: 24px;
         border-bottom: 1px;
-        background-color: aqua;
+        
+       
+        
+        
       
 }
-.page-header .container {
+.header-nav {
         display: flex;
         align-items: center;
 }
-.logo-studio {
-        margin-right: 93px;
-       
+.page-header .container {
+        display: flex;
+
 }
+
 .header-list {
         display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-left: 93px;
+        margin-right: 344px;
 }
-.header-list-item:not(first-child) {
+.header-list-item:not(:first-child) {
         margin-left: 50px;
+        align-items: center;
 }
 
 
 .header-list li {
-        outline: 1px solid #188CE8;
+       
 }
+
 .logo-web {
         font-weight: 700;
         font-size: 26px;
@@ -128,15 +140,15 @@ body {
 }
 .header-contacts {
         display: flex;
-        margin-left: auto;
         
-}
+       
+        }
 .header-contacts li {
-        outline: 1px solid #188CE8;
+       
 }
-.contacts-item:not(first-child) {
-        margin-left: 50px;
-}
+
+
+
 
 
 .header-mail-link {
@@ -153,6 +165,9 @@ body {
         line-height: 1.14;
         letter-spacing: 0.02em; 
         color: var(--grey-color);
+}
+.contacts-item:not(:first-child) {
+        margin-left: 50px;
 }
 
 
@@ -193,7 +208,7 @@ body {
 .section {
     background: var(--second-color);
     padding: 94px 15px;
-    background-color: aqua;
+    
    
     
 }
@@ -224,7 +239,7 @@ body {
 .about {
         background: var(--white-color);
         padding-bottom: 94px;
-        background-color: #2196F3;
+        
        
 }
 .about-list {
@@ -264,9 +279,7 @@ body {
         background-color:var(--second-color) ;
         flex-basis: calc((100% - 3 * 30px) / 4);
 }
-/*.team-item:not(last-child) {
-        margin-right: 30px;
-}*/
+
 .team-title {
         font-weight: 700;
         font-size: 36px;
@@ -307,6 +320,7 @@ body {
 }
 .adress-list {
         list-style: none;
+        margin-top: 20px;
 }
 .address-item {
         font-style: normal;
@@ -335,7 +349,7 @@ body {
 .address-contacts:not(last-child) {
         margin-bottom: 9px;
 }
-.logo-web, .footer-studio {
+ .footer > .container > .logo-web, .footer-studio {
         margin-bottom: 20px;
 }
 
@@ -353,7 +367,7 @@ body {
         padding-top: 94px;
         padding-bottom: 50px;
         justify-content: center;
-        background-color: #188CE8;
+       
 }
 .main-services:not(first-child) {
         margin-left: 8px;
@@ -400,5 +414,5 @@ body {
 }
 .main-content {
         padding: 20px 24px;
-        outline: 1px solid red;
+       
 }
