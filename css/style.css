@@ -225,10 +225,11 @@ body {
 }
 .section-list {
         display: flex;
+        gap: 30px;
 }
        
 .section-list-item {
-        flex-basis: calc((100%-3*30px)/4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .about {
@@ -365,7 +366,7 @@ body {
 .main-list {
         display: flex;
         padding-top: 94px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
         justify-content: center;
         border: none;
        
